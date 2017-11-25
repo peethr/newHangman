@@ -15,11 +15,11 @@ class Game {
 		answerChar = Character.toLowerCase(answerChar);
 		return answerChar;
 	}
-
+		// sprawdz czy juz wpisana tę literę
 	public boolean checkIfGuessed(char guess){
 		return hits.indexOf(guess)!= -1 || misses.indexOf(guess)!=-1;
 	}
-
+		// sprawdz czy litera znajduje sie w naszym slowie
 	public boolean checkGuess(char guess){
 		boolean isHit = (answer.indexOf(guess)!=-1);
 		if(isHit == true)
@@ -46,7 +46,7 @@ class Game {
 
 		return ReturnProgress;
 	}	
-
+		// zwroc ilosc szans
 	public int getMaxMisses(){
 		return MAX_MISSES;
 

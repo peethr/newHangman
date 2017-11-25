@@ -46,7 +46,7 @@ class Game {
 
 		return ReturnProgress;
 	}	
-
+		// zwroc ilosc szans
 	public int getMaxMisses(){
 		return MAX_MISSES;
 

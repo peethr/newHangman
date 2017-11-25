@@ -33,7 +33,7 @@ class Game {
 		}
 		return isHit;
 	}
-
+			// sprawdz jakie litery zostaly odgadniete
 	public String checkProgress(){
 		String ReturnProgress = "";
 		for(char letter : answer.toCharArray()){

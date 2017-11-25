@@ -1,5 +1,5 @@
 class Game {
-
+		// deklaracja zmiennych
 	private final String answer;
 	private String hits = "";
 	private String misses = "";

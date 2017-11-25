@@ -5,7 +5,7 @@ class Game {
 	private String misses = "";
 	public static int MAX_MISSES = 7;
 
-
+		// open game
 	public Game(String answer){
 		this.answer	= answer.toLowerCase();
 	}

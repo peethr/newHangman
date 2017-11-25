@@ -1,8 +1,8 @@
 class Game {
 
 	private final String answer;
-	private String hits;
-	private String misses;
+	private String hits = "";
+	private String misses = "";
 	public static int MAX_MISSES = 7;
 
 
@@ -16,6 +16,9 @@ class Game {
 		return answerChar;
 	}
 
+	public boolean checkIfGuessed(char guess){
+		return hits.indexOf(guess)!= -1 || misses.indexOf(guess)!=-1;
+	}
 
 	public boolean checkGuess(char guess){
 		boolean isHit = (answer.indexOf(guess)!=-1);
